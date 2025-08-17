@@ -21,7 +21,6 @@ local t = "webp"
 if not WEBP then require(t) end
 
 hook.Add("PostRenderVGUI", t, function()
-	a = a + 1
 	local c = render.Capture({
 		x = 0,
 		y = 0,
@@ -43,12 +42,11 @@ oh also you need premake5 and gmcommon (+allotherfeatures). there are like 700 r
 
 also
 
-get vcpkg (godlike(not perfect tho))
+get vcpkg and integrate if not (godlike(not perfect tho))
 
 ```
 vcpkg install libpng
 vcpkg install libwebp
-vcpkg integrate
 ```
 
 also a lot of funky .dlls appear next to release - dump those into gmod root folder or 
